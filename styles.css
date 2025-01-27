@@ -1,0 +1,70 @@
+body {
+    font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  }
+  
+  .file-item,
+  .folder-item {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  .file-item .btn-group,
+  .folder-item .btn-group {
+    visibility: hidden;
+  }
+  
+  .file-item:hover .btn-group,
+  .folder-item:hover .btn-group {
+    visibility: visible;
+  }
+  
+  #sync-status {
+    font-size: 1rem;
+  }
+  
+  .sync-animation {
+    animation: spin 1s linear infinite;
+  }
+  
+  @keyframes spin {
+    0% {
+      transform: rotate(0deg);
+    }
+    100% {
+      transform: rotate(360deg);
+    }
+  }
+  
+  .file-icon {
+    margin-right: 10px;
+  }
+  
+  .folder-icon {
+    color: #ffd700;
+    margin-right: 10px;
+  }
+  
+  .breadcrumb-item a {
+    cursor: pointer;
+  }
+  
+  .auth-form {
+    max-width: 400px;
+    margin: 2rem auto;
+  }
+  
+  .drag-drop-zone {
+    border: 2px dashed #ccc;
+    border-radius: 5px;
+    padding: 2rem;
+    text-align: center;
+    cursor: pointer;
+  }
+  
+  .drag-drop-zone.drag-over {
+    background-color: #f0f0f0;
+    border-color: #999;
+  }
+  
+  
